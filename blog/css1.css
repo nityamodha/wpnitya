@@ -1,0 +1,53 @@
+body {
+	background-color: silver;
+	font-family: verdana;
+	line-height: 1.5;
+}
+
+div {
+	background-color: gray;
+	border-radius: 10px;
+	border-style: ridge;
+	border-color: purple;
+	padding:  25px;
+	margin: 25px;
+
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+table tr:nth-child(odd){
+	background-color: gray;
+}
+
+li {
+	list-style: none;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid purple;
+    color: white;
+    display: block;
+    width: 200px;
+    border-style: ridge;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+a:hover ,a:active{
+	background-color: white;
+	color: black;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid purple;
+    padding: 5px;
+}
