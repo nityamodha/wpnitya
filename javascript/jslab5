@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Lab 5</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+function difference(arr1,arr2) {
+ var a1= flatten(arr1,true);
+ var a2= flatten(arr2,true);
+ var a=[], diff=[];
+  
+  for(var i=0;i<a1.length;i++)
+  a[a1[i]]=false;
+  for(i=0;i<a2.length;i++)
+  if(a[a2[i]]===false) 
+  { delete a[a2[i]];}
+  else a[a2[i]]=true;
+  for(var k in a)
+  diff.push(k);
+  return diff; 
+  }
+  var flatten = function(a, shallow,r){
+  if(!r){ r = [];}
+  if (shallow) {
+  return r.concat.apply(r,a);
+  } 
+  for(i=0; i<a.length; i++){
+  if(a[i].constructor == Array){
+  flatten(a[i],shallow,r);
+  }else{
+  r.push(a[i]);
+  }
+  }
+  return r;
+  };
+  var a3 = difference([3 ,6, 2, 56, 5, 89],[3, 5, 23, 32, 65, 41, 89]);
+  console.log(a3);
+
+  var c = Math.max(...a3);
+  console.log(c);
+
+</script>
+<h1>Java Script Lab 5</h1>
+<div>
+  <ul>
+    <li>Name: Nitya Modha</li>
+    <li>Roll no: A031</li>
+    <li>Batch: A2</li>
+    <li>Date: 01/03/17</li>
+  </ul>
+</div>
+<h3>Aim: Write a java script function that compares 2 arrays and prints the largest number uncommon in both the arrays</h3>
+</body>
+</html>
