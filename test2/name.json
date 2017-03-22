@@ -1,6 +1,8 @@
 {
-  "firstName": "Yaakov",
-  "lastName": "Chaikin",
-  "likesChineseFood": true,
-  "numberOfDisplays": 2 
+  "st1": "jim",
+  "st2": "tim",
+  "q1" : "Cow is a reptile",
+  "q2" : "Bird is a mammal",
+  "a1" : true,
+  "a2": false, 
 }
